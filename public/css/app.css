@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+
+h1 {
+    color: green;
+}
+
+.container table {
+    margin: 0 auto;
+}
+
+.container table thead tr th {
+    padding: 4px;
+    font-size: 1.4em;
+}
