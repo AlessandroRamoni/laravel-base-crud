@@ -18,17 +18,17 @@
             <thead>
                 <tr>
                     <th>Titolo</th>
-                    <th>Casa editrice</th>
-                    <th>Lingua originale</th>
-                    <th>Autore</th>
+                    <th>Descrizione</th>
+                    <th>Copertina</th>
+                    <th>Prezzo</th>
                 </tr>
             </thead>
             @foreach ($comics as $comic)
                 <tr>
-                    <td>{{ $comic['titolo'] }}</td>
-                    <td>{{ $comic['casa_editrice'] }}</td>
-                    <td>{{ $comic['lingua_originale'] }}</td>
-                    <td>{{ $comic['autore'] }}</td>
+                    <td>{{ $comic['title'] }}</td>
+                    <td>{{ $comic['description'] }}</td>
+                    <td>{{ $comic['thumb'] }}</td>
+                    <td>{{ $comic['price'] }}</td>
             @endforeach
             </tr>
         </table>
