@@ -18,14 +18,14 @@ class ComicsTableSeeder extends Seeder
         //
         for($i = 0; $i < 20; $i++){
 
-            $comic = new Comic();
-            $comic->nome_evento = $faker->name();
-            $comic->label = $faker->name();
-            $comic->outdoor = $faker->boolean();
-            $comic->indirizzo = $faker->address();
-            $comic->quando = $faker->date();
+            $comics = new Comics();
+            $comics->nome_evento = $faker->name();
+            $comics->label = $faker->name();
+            $comics->outdoor = $faker->boolean();
+            $comics->indirizzo = $faker->address();
+            $comics->quando = $faker->date();
 
-            $comic->save();
+            $comics->save();
 
         }
     }
