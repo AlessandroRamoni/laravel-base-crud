@@ -4,7 +4,7 @@ namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Comic extends Model
+class Comics extends Model
 {
     //
 }
