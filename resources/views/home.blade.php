@@ -12,13 +12,25 @@
 
     <h1>CRUD</h1>
 
-    <div>
-        <ul>
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Titolo</th>
+                    <th>Casa editrice</th>
+                    <th>Lingua originale</th>
+                    <th>Autore</th>
+                </tr>
+            </thead>
             @foreach ($comics as $comic)
-                <li>{{ $comic['titolo'] }}</li>
-                <li>{{ $comic['casa_editrice'] }}</li>
+                <tr>
+                    <td>{{ $comic['titolo'] }}</td>
+                    <td>{{ $comic['casa_editrice'] }}</td>
+                    <td>{{ $comic['lingua_originale'] }}</td>
+                    <td>{{ $comic['autore'] }}</td>
             @endforeach
-        </ul>
+            </tr>
+        </table>
     </div>
 </body>
 
