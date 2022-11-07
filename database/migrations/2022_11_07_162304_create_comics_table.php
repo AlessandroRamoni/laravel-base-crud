@@ -15,14 +15,28 @@ class CreateComicsTable extends Migration
     {
         Schema::create('comics', function (Blueprint $table) {
             $table->id();
-            $table->string('titolo', 100);
-            $table->text('casa_editrice');
-            $table->boolean('lingua_originale');
-            $table->string('autore', 100);
-            $table->date('anno');
+            $table->string('title', 50);
+            $table->text('description', 50);
+            $table->text('thumb');
+            $table->float('price', 3, 2);
+            $table->string('series', 50);
+            $table->date('sale_date');
+            $table->string('type', 50);
             $table->timestamps();
         });
     }
+
+    /*
+          $table->id();
+            $table->string('title', 50);
+            $table->text('description', 50);
+            $table->text('thumb');
+            $table->float('price', 3, 2);
+            $table->string('series', 50);
+            $table->date('sale_date');
+            $table->string('type', 50);
+            $table->timestamps();
+    */
 
     /**
      * Reverse the migrations.
