@@ -4,14 +4,14 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\models\Comic;
+use App\models\Comics;
 
 class ComicController extends Controller
 {
     //
 
     public function index(){
-        $comics = Comic::all();
+        $comics = Comics::all();
         return view('home', compact('comics'));
     }
 }
