@@ -12,6 +12,14 @@
 
     <h1>CRUD</h1>
 
+    <div>
+        <ul>
+            @foreach ($comics as $comic)
+                <li>{{ $comic['titolo'] }}</li>
+                <li>{{ $comic['casa_editrice'] }}</li>
+            @endforeach
+        </ul>
+    </div>
 </body>
 
 </html>
